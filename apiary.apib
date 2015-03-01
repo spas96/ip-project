@@ -1,0 +1,41 @@
+FORMAT: 1A
+
+# ipproject
+Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+
+# Group Notes
+Notes related resources of the **Notes API**
+
+## Notes Collection [/notes]
+### List all Notes [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "title": "Замърсени места, "desctiption" : "Раздел представящ мръсните места в България."
+        }, {
+          "id": 2, "title": "Сбирки", "desctiption" : "Раздел за организиране на сбирки с цел почистване на замърсените точки на България"
+        }, {
+          "id": 3, "title": "Новини", "desctiption" : "Раздел представящ случващото се с инициативата/кой,кога,къде/"
+        }]
+
+### Create a Note [POST]
++ Request (application/json)
+
+        { "id": 4, "title": "Да живеем в по-чиста България", "desctiption" : "Да живеем в по-чиста България", "desctiption" : "Мотивации: Да направим България по-добро място за жив }
+
++ Response 201 (application/json)
+
+        { "id": 4, "title": "Да живеем в по-чиста България", "desctiption" : "Мотивации: Да направим България по-добро място за живеене" }
+
+## Note [/notes/{id}]
+A single Note object with all its details
+
++ Parameters
+    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+
+### Retrieve a Note [GET]
++ Response 200 (application/json)
+
+    + Body
+    
+            { "id": 1, "title": "Почистени места", "desctiption" : "Раздел показващ организациите и почистените места." }
