@@ -6,7 +6,7 @@ Notes API is a *short texts saving* service similar to its physical paper presen
 # Group Notes
 Notes related resources of the **Notes API**
 
-## Notes Collection [/notes]
+## Notes Collection [/categories]
 ### List all Notes [GET]
 + Response 200 (application/json)
 
@@ -27,15 +27,29 @@ Notes related resources of the **Notes API**
 
         { "id": 4, "title": "Да живеем в по-чиста България", "desctiption" : "Мотивации: Да направим България по-добро място за живеене" }
 
-## Note [/notes/{id}]
+## Images [/images/{id}]
 A single Note object with all its details
 
 + Parameters
     + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+    
+### Upload an image [POST]
++ Request (application/json)
 
-### Retrieve a Note [GET]
+        { "title": "Президент", "content": "http://president.bg/images/gallery/1366461402.jpg" }
+
++ Response 201 (application/json)
+
+        { "id": 1, "title": "Президент", "content": "http://president.bg/images/gallery/1366461402.jpg" }
+
+
+
+### Retrieve an image [GET]
 + Response 200 (application/json)
 
-    + Body
-    
-            { "id": 1, "title": "Почистени места", "desctiption" : "Раздел показващ организациите и почистените места." }
+
+        { "id": 1, "title": "Президент", "content": "http://president.bg/images/gallery/1366461402.jpg" }
+        
+
+### Delete an image [DELETE]
++ Response 204
