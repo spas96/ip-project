@@ -96,21 +96,6 @@ $(document).ready(function() {
 			}
 		});
 	}
-
-	
-	
-	$.ajax('http://private-22c43-ipproject.apiary-mock.com/notes', {
-	  method: "GET"
-	}).then(processResponse, handleError);
-
-	 $.ajax('http://private-22c43-ipproject.apiary-mock.com/notes', {
-		  method: 'POST',
-		  data: {
-			  	id:5,
-			    title: 'NEW POST',
-		  } 
-		}).then(function(data) {
-			console.log(data)});
 	
 	
 
