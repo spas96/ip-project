@@ -1,0 +1,67 @@
+{
+  "novini": [
+    {
+      "id": 1,
+      "title": "dwq23s",
+      "author": "typicode",
+      "body": "bar"
+    },
+    {
+      "title": "zagl",
+      "id": 2,
+      "body": "body2"
+    },
+    {
+      "title": 12,
+      "id": 3,
+      "body": "bbbb"
+    },
+    {
+      "title": "+",
+      "id": 4,
+      "body": "-"
+    },
+    {
+      "title": "r",
+      "body": "F",
+      "id": 5
+    },
+    {
+      "title": "ppp",
+      "body": "p",
+      "id": 6
+    },
+    {
+      "title": 123,
+      "body": 123123,
+      "id": 7
+    },
+    {
+      "title": 55,
+      "body": 33,
+      "id": 8
+    }
+  ],
+  "snimki": [
+    {
+      "id": 1,
+      "title": "http://localhost:3000/images/json.png"
+    },
+    {
+      "title": "http://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/2000px-Flag_of_Bulgaria.svg.png",
+      "id": 2
+    },
+    {
+      "title": "http://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/2000px-Flag_of_Bulgaria.svg.png",
+      "id": 3
+    },
+    {
+      "title": "http://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/2000px-Flag_of_Bulgaria.svg.png",
+      "id": 4
+    },
+    {
+      "title": "http://img.jgi.doe.gov/images/img-user-forum.png",
+      "id": 5
+    }
+  ]
+}
